@@ -1,0 +1,15 @@
+Suppose a subclass inherits a method implementation from a superclass, and implements a Java interface (that’s the "interface" keyword) that contains a method with the same name and prototype.
+
+(a) Will Java compile the result?
+A: Yes.
+(b) What if the method declaration in the interface has a different return
+ type?
+A: No, we will get compile time error.
+(c) What if the method declaration in the interface has the same return type, but a signature with a different parameter type?
+A: Yes, It's OK. 
+(d) What if the method declaration in the interface has the same return type, and the same number of parameters and parameter types, but those
+ parameters have different names?
+A: Yes, it's OK.
+
+Conclusion:
+The standard of appearing compile-time error is whether the program would confuse the compiler.

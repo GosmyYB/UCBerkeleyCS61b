@@ -1,0 +1,9 @@
+(a) At compile-time, can we assign xa to ya, and vice versa? When is a cast required?
+A: At complie-time, we can not assign xa to ya, but can assign ya to xa. When we want to assgin xa to ya, a cast is required. Such like this, Y[] ya = (Y[])xa;
+(b) At run-time, if ya references an array of Y’s, can we assign it to xa?
+ Can we then assign it back from xa to ya?
+ A: At run-time, we can assgin ya to xa, and we can not assign it back form xa to ya without casting.
+(c) If xa references an array of X’s (that are not Y’s), can we assign it to ya? Can we then assign it back from ya to xa? Does it make a difference
+ if the array of type X[] references objects that are all of class Y? Why
+ do you think this is the case?
+ A: We can assign it to ya using casting, and we can assign it back from ya to xa. Yes, It make a difference. If we use the objects' method in X[], it will invoke methods in Y's, not X's.
