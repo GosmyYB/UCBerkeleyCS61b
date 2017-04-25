@@ -51,6 +51,10 @@ public class PrimeTest {
 	}
 
 	public static void main(String[] str) {
-		printPrimes2(1000);
+		if (str.length < 1) {
+			System.out.println("Please use an integer as an parameter.");
+		} else {
+			printPrimes2(Integer.parseInt(str[0]));
+		}
 	}
 }
